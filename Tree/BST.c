@@ -17,7 +17,9 @@ struct Node * createNode(int data){
 
 struct Node * insert(struct Node* root, int value){
     if(root==NULL){
-        return createNode(value);
+
+    
+         return createNode(value);
     }
     if(value < root->data){
         root->left = insert(root->left,value);
